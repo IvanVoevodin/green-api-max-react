@@ -4,6 +4,35 @@ A minimal web chat for sending and receiving **text messages in MAX** through [G
 
 Built with React 19, TypeScript and Vite. Tests use Vitest and React Testing Library.
 
+## Demonstration
+
+### Login
+
+Enter the instance credentials from the GREEN-API console. `apiUrl` is suggested from idInstance.
+
+<p align="center">
+  <img src="docs/login-page.png" alt="Login screen with idInstance, apiTokenInstance and apiUrl fields" width="360">
+</p>
+
+### Empty chat list
+
+After logging in, press **+** to find a MAX user by phone number.
+
+![Messenger with no chats yet](docs/messanger-empty-page.png)
+
+### New chat
+
+Once the contact is found in MAX, a chat opens and you can write the first message.
+
+![A new chat with a contact, ready for the first message](docs/messanger-with-contact.png)
+
+### Conversation
+
+Sent messages get a check mark when GREEN-API accepts them; replies from the MAX app appear within a few seconds.
+The contact's name is picked up from the incoming message.
+
+![A conversation with a sent message and a reply](docs/messanger-chat.png)
+
 ## Requirements
 
 - Node.js 20.19+ or 22.12+ (required by Vite 8)
